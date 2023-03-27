@@ -1,3 +1,11 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 body {
   margin: 0;
   background-color: paleturquoise;
@@ -45,6 +53,84 @@ main .quotes:hover .quotesAddBtn {
 }
 main .newQuotes {
   display: none;
+}
+main .search .searchTitle {
+  display: flex;
+  font-size: 32px;
+  justify-content: space-around;
+}
+main .search .searchLogo {
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+  animation: spin 2s linear infinite;
+}
+main .search .searchForm {
+  display: flex;
+}
+main .searchResult {
+  display: none;
+  border: 1px solid #f2f2f2;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  color: black;
+  font-size: 14px;
+  padding: 6px 12px;
+  margin-top: 30px;
+}
+main .nft {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 36px;
+}
+main .nft img {
+  width: 172px;
+  height: 172px;
+}
+main .nft .nftHover {
+  position: absolute;
+  display: none;
+  width: 172px;
+  height: 172px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+main .nft .nftHover a {
+  border-radius: 4px;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 6px 12px;
+}
+main .nft .nftHover button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: -8px;
+  background-color: #f2f2f2;
+  border-radius: 9999px;
+  width: 24px;
+  height: 24px;
+}
+main .nft:hover .nftHover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .nftView {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 36px;
+  display: none;
+  background-color: white;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 6px;
 }
 
 /*# sourceMappingURL=style.css.map */
